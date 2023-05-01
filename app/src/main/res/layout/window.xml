@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:elevation="2dp"
+    android:padding="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/win_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/win_minimize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            app:srcCompat="@drawable/baseline_minimize_24" />
+
+        <ImageView
+            android:id="@+id/win_fullscreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            app:srcCompat="@drawable/baseline_fullscreen_24" />
+
+        <ImageView
+            android:id="@+id/win_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            app:srcCompat="@drawable/baseline_close_24" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/window_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:background="@color/black">
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/win_resize"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="bottom|right"
+        app:srcCompat="@drawable/baseline_grain_24" />
+
+</FrameLayout>
